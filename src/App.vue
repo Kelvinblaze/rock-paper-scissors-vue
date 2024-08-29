@@ -183,7 +183,7 @@ const selectUserChoice = (choice: Choices) => {
     setTimeout(() => {
       computerChoice.value = generateComputerChoice();
       showResult.value = true;
-    }, 2000);
+    }, 1000);
   }
 };
 

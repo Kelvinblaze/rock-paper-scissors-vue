@@ -13,7 +13,5 @@ export const useScoreStore = defineStore("score", {
       this.score--;
     },
   },
-  persist: {
-    enabled: true,
-  },
+  persist: true,
 });

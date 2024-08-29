@@ -7,19 +7,19 @@
 
     <div v-else class="tw-relative">
       <div
-        class="tw-cursor-pointer lg:tw-w-[10em] lg:tw-h-[10em] tw-w-[8em] tw-h-[8em] tw-rounded-full tw-grid tw-place-content-center tw-shadow-lg"
+        class="tw-cursor-pointer lg:tw-w-[10em] lg:tw-h-[10em] tw-w-[8em] tw-h-[8em] tw-rounded-full tw-grid tw-place-content-center"
         :class="[
           rule === 'rock'
-            ? 'tw-bg-red-500'
+            ? 'tw-bg-red-500 tw-shadow-[1px_6px_theme(colors.red.600)]'
             : rule === 'paper'
-            ? 'tw-bg-blue-500'
+            ? 'tw-bg-blue-500 tw-shadow-[1px_6px_theme(colors.blue.600)]'
             : rule === 'scissors'
-            ? 'tw-bg-yellow-500'
+            ? 'tw-bg-yellow-500 tw-shadow-[1px_6px_theme(colors.yellow.600)]'
             : 'tw-bg-orange-500',
         ]"
       >
         <div
-          class="tw-bg-white lg:tw-w-[8em] lg:tw-h-[8em] tw-w-[6em] tw-h-[6em] tw-rounded-full tw-grid tw-place-content-center"
+          class="tw-shadow-[inset_4px_4px_theme(colors.gray.300)] tw-bg-white lg:tw-w-[8em] lg:tw-h-[8em] tw-w-[6em] tw-h-[6em] tw-rounded-full tw-grid tw-place-content-center"
         >
           <div>
             <img :src="RockImage" alt="rock" v-if="rule === 'rock'" />
@@ -63,6 +63,14 @@ defineProps<{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: ripple 2s 1s ease-in-out infinite;
+}
+
+@keyframes ripple {
+  to {
+    transform: translate(-50%, -50%), scale(2);
+    opacity: 0;
+  }
 }
 
 .rule-card-ripple--one::before {
