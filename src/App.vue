@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-min-h-screen tw-h-auto">
+  <main class="tw-min-h-screen tw-h-auto">
     <div class="tw-space-y-10 tw-w-[95%] tw-m-auto tw-py-5">
       <!-- Score Counter -->
       <section class="lg:tw-w-[60%] tw-w-full tw-m-auto">
@@ -119,7 +119,7 @@
         </div>
       </Modal>
     </div>
-  </div>
+  </main>
 </template>
 
 <script setup lang="ts">
