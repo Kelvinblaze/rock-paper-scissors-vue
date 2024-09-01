@@ -129,7 +129,7 @@ import { useScoreStore } from "./stores/score";
 // Images
 import CloseIcon from "./assets/images/icon-close.svg";
 import RulesImage from "./assets/images/image-rules.svg";
-import TriangleBackground from "@/assets/images/bg-triangle.svg";
+import TriangleBackground from "./assets/images/bg-triangle.svg";
 
 // Components
 import ScoreCounter from "./components/ScoreCounter.vue";
