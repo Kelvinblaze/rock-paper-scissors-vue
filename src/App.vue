@@ -1,5 +1,5 @@
 <template>
-  <main class="tw-min-h-screen tw-h-auto">
+  <div class="tw-min-h-screen tw-h-auto">
     <div class="tw-space-y-10 tw-w-[95%] tw-m-auto tw-py-5">
       <!-- Score Counter -->
       <section class="lg:tw-w-[60%] tw-w-full tw-m-auto">
@@ -119,7 +119,7 @@
         </div>
       </Modal>
     </div>
-  </main>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -129,7 +129,7 @@ import { useScoreStore } from "./stores/score";
 // Images
 import CloseIcon from "./assets/images/icon-close.svg";
 import RulesImage from "./assets/images/image-rules.svg";
-import TriangleBackground from "./assets/images/bg-triangle.svg";
+import TriangleBackground from "@/assets/images/bg-triangle.svg";
 
 // Components
 import ScoreCounter from "./components/ScoreCounter.vue";
