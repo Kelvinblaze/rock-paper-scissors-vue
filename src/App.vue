@@ -11,7 +11,7 @@
         <!-- Stage One (Player Choose Option) -->
         <div
           v-if="step === 1"
-          class="tw-w-auto lg:tw-w-[400px] tw-h-[400px] tw-relative tw-m-auto"
+          class="tw-w-auto tw-w-[400px] tw-h-[400px] tw-relative tw-m-auto"
           :style="{
             backgroundImage: `url(${TriangleBackground})`,
             backgroundRepeat: 'no-repeat',
